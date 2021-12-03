@@ -1,3 +1,5 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
 :root {
   --header-height: 3.5rem;
 
@@ -220,3 +222,5 @@ button {
   object-fit: cover;
   object-position: center;
 }
+
+/*login-css*/
