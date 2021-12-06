@@ -288,7 +288,19 @@ input {
   position: relative;
   top: 200px;
   background-image: url(/assets/images/snowgif.gif);
+  background-size: 150px;
 }
+.frame1__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  background: url(/assets/images/rugova-snowmobile.jpg);
+  background-size: cover;
+  
+}
+
 
 
 
