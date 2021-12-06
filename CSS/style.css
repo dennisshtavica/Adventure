@@ -293,12 +293,19 @@ input {
 
 
 
-
-
-
-
 /*login-css*/
 
+body-login {
+  font-family: sans-serif;
+  background: url("/assets/images/test1.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+
+}
 .container-login {
   width: 380px;
   margin:7% auto;
