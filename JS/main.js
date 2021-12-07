@@ -18,3 +18,13 @@ if (navClose) {
     navMenu.classList.remove("show-menu");
   });
 }
+
+// Swiper
+
+  let destinationWwiper = new Swiper(".destinations-swiper", {
+    spaceBetween: -90,
+    loop: "true",
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });

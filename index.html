@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
@@ -82,26 +87,58 @@
       </div>
     </main>
 
-    <section class="section container winter">
-      <div class="winter__title">
-        <h1>WINTER IS COMING</h1>
-      </div>
-      <div class="frame1__flex">
+    <section class="section  winter">
+      <div class="winter-container container">
+        <div class="winter__title">
+          <h1><span style="color: #65ffff">WINTER</span> IS COMING</h1>
+        </div>
+        <div class="frame1__flex">
           <div class="cards">
-            fefef <br>
-            fefef
-          
-            <img src="/assets/images/rugova-snowmobile.jpg" alt="">
-            
+            <img src="/assets/images/rugova-snowmobile3.png" alt="" />
           </div>
+          <div class="cards">
+            <img src="/assets/images/brezovica.png" alt="" />
+          </div>
+        </div>
+        <div class="cards">
+          <img src="/assets/images/rugova-mountains2.png" alt="" />
+        </div>
       </div>
-      <div>
-         
+    </section>
+
+    <section class="section destinations">
+      <div class="d__title container">
+        <h1>find <span style="color: #FF6554;"> popular </span>destinations</h1>
+      </div>
+      <div class="swiper destinations-swiper">
+        <div class="swiper-wrapper">
+          <!-- Destinations slider 1-->
+          <div class="swiper-slide">
+            <div class="d-card container section">
+              <img src="/assets/images/Liqenati2.png" alt="" />
+            </div>
+          </div>
+          <!-- Destinations slider 2-->
+          <div class="swiper-slide">
+            <div class="d-card container section">
+              <img src="/assets/images/via-ferrata2.png" alt="" />
+            </div>
+          </div>
+          <!-- Destinations slider 3-->
+          <div class="swiper-slide">
+            <div class="d-card container section">
+              <img src="/assets/images/kanioni.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <!-- Scroll Reveal -->
     <script src="/JS/scrollreveal.min.js"></script>
+    <!-- Swiper CSS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->
     <script src="/JS/main.js"></script>
   </body>
