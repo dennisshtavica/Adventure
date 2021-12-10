@@ -766,7 +766,7 @@ login-body {
   object-position: center;
 }
 .container-login {
-  width: 380px;
+  width: 100%;
   margin: 7% auto;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -779,7 +779,7 @@ login-body {
 }
 
 .header-login h1 {
-  color: #13134f;
+  color: white;
   font-size: 45px;
   margin-bottom: 80px;
 }
@@ -794,6 +794,7 @@ button {
   height: 40px;
   border: none;
   outline: none;
+  border-radius: 10px;
   padding-left: 40px;
   box-sizing: border-box;
   font-size: 15px;
