@@ -39,10 +39,25 @@ window.addEventListener('scroll', scrollHeader)
 
 // Swiper
 
-  let destinationWwiper = new Swiper(".destinations-swiper", {
-    spaceBetween: -90,
-    loop: "true",
+  // let destinationWwiper = new Swiper(".destinations-swiper", {
+  //   spaceBetween: -90,
+  //   loop: "true",
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //   },
+  // });
+
+  let swiper = new Swiper(".destinations-swiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     pagination: {
       el: ".swiper-pagination",
     },
+    mousewheel: true,
+    keyboard: true,
   });
+
+

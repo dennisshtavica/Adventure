@@ -362,7 +362,14 @@ input {
   height: 5px;
   border-radius: 0.5rem;
 }
-
+.swiper-button-next {
+  color: black;
+  margin-right: var(--mb-1-5);
+}
+.swiper-button-prev {
+  color: black;
+  margin-left: var(--mb-1-5);
+}
 /* ---Camp fire Cards */
 .grid__cards {
   display: grid;
@@ -552,10 +559,22 @@ footer p {
     grid-template-columns: max-content;
     justify-content: center;
   }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
 }
 @media screen and (max-width: 460px) {
   .grid__cards {
     justify-items: center;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
   }
 }
 /* FOR MEDIUM DEVICES */
@@ -564,7 +583,7 @@ footer p {
     width: 70%;
   }
   .d-card img {
-    width: 60%;
+    width: 50%;
   }
   .grid__cards {
     justify-content: center;
@@ -610,6 +629,20 @@ footer p {
   }
   .cards img {
     width: 50%;
+  }
+  .d-card img {
+    width: 40%;
+  }
+  .grid__cards {
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 200px);
+    gap: 15px;
+
+  }
+  .camp__fire {
+    width: 100%;
+    height: 170px;
   }
 }
 /*login-css*/
