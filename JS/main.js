@@ -48,7 +48,11 @@ window.addEventListener('scroll', scrollHeader)
   // });
 
   let swiper = new Swiper(".destinations-swiper", {
-    cssMode: true,
+    // cssMode: true,
+    // centeredSlides: true,
+    // slidesPerView: '3',
+    // spaceBetween: -90,
+    loop: 'true',
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -56,7 +60,7 @@ window.addEventListener('scroll', scrollHeader)
     pagination: {
       el: ".swiper-pagination",
     },
-    mousewheel: true,
+    // mousewheel: true,
     keyboard: true,
   });
 
