@@ -320,6 +320,12 @@ input {
   justify-content: center;
   align-items: center;
 }
+/* .d-card a {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 .d-card img {
   width: 80%;
   border-radius: 30px;
@@ -551,11 +557,11 @@ footer p {
   .search__bar {
     width: 250px;
   }
-  .winter {
+  /* .winter {
     position: relative;
     bottom: 50px;
     margin-bottom: -1rem;
-  }
+  } */
   .grid__cards {
     grid-template-columns: max-content;
     justify-content: center;
@@ -631,11 +637,11 @@ footer p {
   .search__bar {
     width: 400px;
   }
-  .winter {
+  /* .winter {
     position: relative;
     top: 36px;
     margin-bottom: 6rem;
-  }
+  } */
   .winter__title h1 {
     font-size: 40px;
     margin-top: 2rem;
@@ -842,9 +848,9 @@ a :link {
   padding-bottom: 20px;
   color: #13134f;
 }
-a:hover {
+/* a:hover {
   color: #3030b7;
-}
+} */
 
 /*Register CSS*/
 
