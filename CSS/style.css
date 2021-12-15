@@ -320,12 +320,12 @@ input {
   justify-content: center;
   align-items: center;
 }
-/* .d-card a {
+.d-card a {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 .d-card img {
   width: 80%;
   border-radius: 30px;
@@ -557,11 +557,6 @@ footer p {
   .search__bar {
     width: 250px;
   }
-  /* .winter {
-    position: relative;
-    bottom: 50px;
-    margin-bottom: -1rem;
-  } */
   .grid__cards {
     grid-template-columns: max-content;
     justify-content: center;
@@ -931,4 +926,20 @@ button {
   color: #333;
   font-size: 16px;
   top: 2px;
+}
+
+
+/* Via Ferrata */
+.via-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.heading h1 {
+  color: white;
+  font-size: 30px;
 }
