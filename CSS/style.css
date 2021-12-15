@@ -572,6 +572,23 @@ footer p {
   .swiper-button-prev {
     display: none;
   }
+  .container-login{
+    width: 80%;
+    margin: 10% auto;
+  }
+  .header-login{
+    text-align: center;
+    padding-top: 60px;
+  }
+  .header-login h1{
+    font-size: 37px;
+    margin-bottom: 70px;
+  }
+  .main-login input,
+  button{
+    width: 170px;
+
+  }
 }
 @media screen and (max-width: 476px) {
   .grid__cards {
@@ -749,20 +766,11 @@ footer p {
   }
 
 }
+
 /*login-css*/
 
 body-login {
-  /* font-family: sans-serif;
-  background: url("/assets/images/test1.webp) no-repeat center center fixed;
-login-body {
-  font-family: sans-serif;
-  background: url("/assets/images/test1.webp") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden; */
+  font-family:Poppins;
   position: absolute;
   top: 0;
   left: 0;
