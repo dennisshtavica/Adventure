@@ -596,6 +596,7 @@ button {
   font-weight: bold;
   margin-bottom: 70px;
   color: white;
+  margin-left: 0;
 }
 
 .main-login button:hover {
