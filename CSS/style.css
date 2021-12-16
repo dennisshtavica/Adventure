@@ -220,9 +220,6 @@ button {
 .home-bg {
   position: absolute;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -366,7 +363,7 @@ input {
   opacity: 1;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets
+.swiper-pagination-horizontal.swiper-pagination-bullets,
   .swiper-pagination-bullet {
   margin: 0 0.5rem;
 }
@@ -553,6 +550,20 @@ body-login{
   height: 100vh;
   object-fit: cover;
   object-position: center;
+}
+.login-bg{
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+
 }
 .container-login {
   width: 100%;
