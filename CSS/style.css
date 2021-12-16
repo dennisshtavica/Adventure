@@ -233,6 +233,12 @@ button {
   display: grid;
   text-align: center;
 }
+/* .login__container {
+  position: relative;
+  height: 100%;
+  display: grid;
+  text-align: center;
+} */
 .home__data {
   margin-top: 50px;
 }
@@ -533,12 +539,10 @@ footer p {
   margin: 5px;
 }
 
-
-
 /*login-css*/
 
 body-login {
-  font-family:Poppins;
+  font-family: Poppins;
   position: absolute;
   top: 0;
   left: 0;
@@ -553,6 +557,7 @@ body-login {
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 25px #13134f;
+  
 }
 
 .header-login {
@@ -702,7 +707,6 @@ button {
   top: 2px;
 }
 
-
 /* Via Ferrata */
 .via-bg {
   position: absolute;
@@ -752,24 +756,22 @@ button {
   .swiper-button-prev {
     display: none;
   }
-  .container-login{
+  .container-login {
     width: 100px;
     margin: 10% auto;
   }
-  .header-login{
+  .header-login {
     text-align: center;
     padding-top: 60px;
   }
-  .header-login h1{
+  .header-login h1 {
     font-size: 37px;
     margin-bottom: 70px;
   }
   .main-login input,
-  button{
+  button {
     width: 170px;
-
   }
-
 }
 @media screen and (max-width: 476px) {
   .grid__cards {
@@ -910,7 +912,7 @@ button {
     grid-template-rows: 1fr;
     gap: 15px;
   }
-  .home__links a{
+  .home__links a {
     font-size: 15px;
   }
   .home__links-button {
@@ -945,5 +947,4 @@ button {
     justify-content: center;
     gap: 100px;
   }
-
 }
