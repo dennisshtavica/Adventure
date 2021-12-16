@@ -1,7 +1,8 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
 :root {
-  --header-height: 3.5rem;
+  --header-height: 2.5rem;
+  /* 3,5rem */
 
   /*========== Colors ==========*/
   --container-color: #b0c6d2;
@@ -138,8 +139,6 @@ button {
 }
 /* Change background header */
 .scroll-header {
-  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -210.71%, rgba(255, 255, 255, 0.4) 414.29%);;
-  box-shadow: -70px 10px 95px rgba(0, 0, 0, 0.25); */
   background-color: #341664;
 }
 
@@ -547,7 +546,7 @@ footer p {
 /*login-css*/
 
 body-login{
-  font-family:Poppins;
+  font-family: Poppins;
   position: absolute;
   top: 0;
   left: 0;
@@ -750,7 +749,9 @@ button {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-
+  .nav {
+    height: 3.5rem;
+  }
   .home__container {
     justify-content: center;
   }
@@ -819,7 +820,6 @@ button {
     width: 180px;
   }
 }
-
 @media screen and (max-width: 476px) {
   .grid__cards {
     justify-items: center;
@@ -832,6 +832,9 @@ button {
   }
   .socials img {
     width: 8%;
+  }
+  .nav {
+    height: 3.5rem;
   }
 }
 /* FOR MEDIUM DEVICES */
@@ -856,6 +859,9 @@ button {
   }
   .socials img {
     width: 5%;
+  }
+  .nav {
+    height: 3.5rem;
   }
 }
 @media screen and (min-width: 767px) {
@@ -935,6 +941,7 @@ button {
   .socials img {
     width: 4%;
   }
+  
 }
 
 /* FOR LARGE DEVICES */
