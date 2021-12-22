@@ -64,4 +64,52 @@ window.addEventListener('scroll', scrollHeader)
     keyboard: true,
   });
 
+  /*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+  // distance: '60px',
+  // duration: 2800,
+  // // reset: true,
+  origin: "top",
+  // distance: "60px",
+  duration: 1500,
+  delay: 100,
+});
+
+sr.reveal('.nav');
+sr.reveal(".home__container");
+
+const sr2 = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 1500,
+  delay: 100,
+  reset: true,
+});
+sr2.reveal('.cards');
+sr2.reveal('.grid__cards');
+
+const sr3 = ScrollReveal({
+  reset: true,
+  origin: "left",
+  distance: "60px",
+  duration: 1500,
+  delay: 100,
+})
+
+sr3.reveal('.condition1');
+
+const sr4 = ScrollReveal({
+  reset: true,
+  origin: "right",
+  distance: "60px",
+  duration: 1500,
+  delay: 100,
+});
+
+sr4.reveal(".condition2");
+
+
+
+
+
 
