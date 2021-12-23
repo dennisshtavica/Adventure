@@ -37,15 +37,7 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 
-// Swiper
-
-  // let destinationWwiper = new Swiper(".destinations-swiper", {
-  //   spaceBetween: -90,
-  //   loop: "true",
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //   },
-  // });
+// SWIPER
 
   let swiper = new Swiper(".destinations-swiper", {
     // cssMode: true,
@@ -101,7 +93,7 @@ sr3.reveal('.condition1');
 const sr4 = ScrollReveal({
   reset: true,
   origin: "right",
-  distance: "60px",
+  distance: "20px",
   duration: 1500,
   delay: 100,
 });
