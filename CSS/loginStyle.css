@@ -2,11 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: Adventure;
+    position: relative;
+  background-color: #7367f0;
     background-image: url(/assets/images/snowgif.gif);
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -o-background-size: cover; */
+    /* background-size: cover; */
+
     width: 100%;
     overflow: hidden;
 
@@ -26,13 +29,12 @@ body{
     width: 300px;
     height: 400px;
     background: #093b49;
-
     position: relative;
     transition:1s;
     perspective: 1000px;
     transform-style: preserve-3d;
     border-radius: 25px;
-    box-shadow: 0 0 200px #13134f;
+    box-shadow: 0 0 30px #13134f;
 }
 .front, .back{
     position: absolute;
@@ -40,7 +42,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom right, #295e75, #034f65);
+    background: linear-gradient(to bottom right, #6d18cf, #841d9e);
     box-sizing: border-box;
     padding: 5px;
     transform: translateZ(1px);
@@ -52,6 +54,7 @@ body{
 }
 h1{
     color:#fff;
+    margin-bottom: 1rem;
 }
 h2{
     color:#fff;
@@ -92,7 +95,7 @@ input[type="submit"]{
     cursor: pointer;
 }
 input[type="submit"]:hover{
-    background: linear-gradient(to bottom right, #1c90ad, #02309a);
+     background: linear-gradient(to bottom right, #841d9e,#6d18cf);
 }
 input:focus{
     border:2px solid #b618b7;
@@ -110,5 +113,8 @@ i{
     right: 0;
     align-self: flex-end;
     color:#fff;
-    background: #072e38;
+    background: #000000;
+}
+.nav__link {
+    font-family: poppins;
 }
