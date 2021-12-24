@@ -549,6 +549,31 @@ footer p {
   color: white;
   font-size: 30px;
 }
+.text__ctn {
+  width: auto;
+  height: 300px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) -210.71%,
+    rgba(255, 255, 255, 0.4) 414.29%
+  );
+  box-shadow: -70px 10px 95px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  border-radius: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text__ctn p {
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    color: white;
+    margin: 0px 25px 0 25px;
+}
+.home__data-via {
+  justify-self: start;
+}
 
 
 /* BREAKPOINTS */
@@ -587,6 +612,9 @@ footer p {
   .swiper-button-prev {
     display: none;
   }
+  .text__ctn {
+      height: 380px;
+  }
 }
 @media screen and (max-width: 476px) {
   .grid__cards {
@@ -603,6 +631,9 @@ footer p {
   }
   .nav {
     height: 3.5rem;
+  }
+  .text__ctn {
+    height: 350px;
   }
 }
 /* FOR MEDIUM DEVICES */
@@ -630,6 +661,9 @@ footer p {
   }
   .nav {
     height: 3.5rem;
+  }
+  .text__ctn {
+    height: 200px;
   }
 }
 @media screen and (min-width: 767px) {
@@ -709,7 +743,10 @@ footer p {
   .socials img {
     width: 4%;
   }
-  
+  .text__ctn {
+    width: 500px;
+    height: 300px;
+  }
 }
 
 /* FOR LARGE DEVICES */
