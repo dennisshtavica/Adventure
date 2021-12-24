@@ -223,6 +223,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -534,7 +535,7 @@ footer p {
 
 /*login-css*/
 
-body-login{
+/* body-login{
   font-family: Poppins;
   position: absolute;
   top: 0;
@@ -640,9 +641,8 @@ body-login{
 }
 
 
-
 /*Register CSS*/
-register-body {
+/* register-body {
   font-family:Poppins;
   position: absolute;
   top: 0;
@@ -731,7 +731,7 @@ register-body {
   text-decoration: none;
   border-bottom: 1px solid #3030b7;
 
-}
+} */ 
 
 
 
