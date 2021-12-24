@@ -514,7 +514,7 @@ input {
 /* Footer */
 footer {
   background-color: #7367f0;
-  height: 400px;
+  height: auto;
   padding: 25px;
 }
 footer h3 {
