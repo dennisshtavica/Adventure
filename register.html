@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="stylesheet" href="/CSS/fontello.css" />
+    <link rel="stylesheet" href="/CSS/loginStyle.css" />
   </head>
 
   <body>
@@ -48,52 +50,49 @@
         </div>
       </nav>
     </header>
-    <section class="register__page">
-      <img src="/assets/images/test1.webp" alt="" class="login-bg" />
-      <div class="home__container container">
-        <div class="container-register">
-          <div class="header-register">
-            <h1>Register</h1>
-          </div>
-          <div class="main-register">
-            <form>
-              <span>
-                <i class="fa fa-user"></i>
-                <input
-                  class="username"
-                  type="text"
-                  placeholder="Enter your Username"
-                  name=""
-                /> </span
-              ><br />
-              <span>
-                <i class="fa fa-lock"></i>
-                <input
-                  class="password"
-                  type="password"
-                  placeholder="Enter your password"
-                  name=""
-                /> </span
-              ><br />
-              <span>
-                <i class="fa fa-lock"></i>
-                <input
-                  class="password"
-                  type="password"
-                  placeholder="Confirm password"
-                  name=""
-                />
-              </span>
-              <button>Register</button><br />
-              <a class="register-link" href="login.html"
-                >You have an account already? Click here to login</a
-              >
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
 
+    <div class="center">
+      <div class="card" id="card">
+        <form action="#" class="front">
+          <h1>Sign in</h1>
+          <div class="group">
+            <i class="icon-mail-alt"></i
+            ><input class="email" type="email" placeholder="Email" />
+          </div>
+          <div class="group">
+            <i class="icon-lock"></i
+            ><input class="password" type="password" placeholder="Password" />
+          </div>
+          <input type="submit" id="btn" value="Login" />
+
+          <h2 id="register">Register</h2>
+        </form>
+
+        <form action="#" class="back">
+          <h1>Register</h1>
+          <div class="group">
+            <i class="icon-user"></i
+            ><input class="name" type="text" placeholder="Name" />
+          </div>
+          <div class="group">
+            <i class="icon-mail-alt"></i
+            ><input class="email" type="email" placeholder="Email" />
+          </div>
+          <div class="group">
+            <i class="icon-lock"></i
+            ><input class="password" type="password" placeholder="Password" />
+          </div>
+          <div class="group">
+            <i class="icon-lock"></i
+            ><input class="password" type="password" placeholder="Password" />
+          </div>
+          <input type="submit" id="btnR" value="Register" />
+
+          <h2 id="Login">Login</h2>
+        </form>
+      </div>
+    </div>
+    <script src="/JS/event.js"></script>
     <script src="/JS/main.js"></script>
   </body>
 </html>

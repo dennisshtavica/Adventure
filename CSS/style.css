@@ -606,7 +606,9 @@ footer p {
 
 /*login-css*/
 
-body-login {
+
+
+/* body-login {
   font-family: Poppins;
   position: absolute;
   top: 0;
@@ -714,7 +716,7 @@ button {
   color: #3030b7;
   text-decoration: none;
   border-bottom: 1px solid #3030b7;
-}
+} */
 
 /*Register CSS*/
 
