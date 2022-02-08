@@ -286,7 +286,7 @@ input {
 .winter {
   position: relative;
   background-color: #7367f0;
-  background-image: url(/assets/images/snowgif.gif);
+  background-image: url("../assets/images/snowgif.gif");
   background-size: 250px;
   /* height: 500px; */
   margin-top: -2rem;
@@ -570,7 +570,7 @@ footer p {
     width: auto;
     height: auto;
     color: white;
-    margin: 0px 25px 0 25px;
+    margin: 0 25px 0 25px;
 }
 .home__data-via {
   justify-self: start;
