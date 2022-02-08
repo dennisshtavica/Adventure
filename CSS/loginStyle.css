@@ -118,3 +118,20 @@ i{
 .nav__link {
     font-family: poppins;
 }
+
+.move-circle {
+    position: absolute;
+    right: 30px;
+    color: black;
+    background: none;
+    display: flex;
+    visibility: hidden;
+}
+.group.success i.fa-check-circle {
+    color: green;
+    visibility: visible;
+}
+.group.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+}
