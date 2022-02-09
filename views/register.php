@@ -20,11 +20,11 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="index.html" class="nav__logo"> Adventure </a>
+        <a href="indexasdfas.html" class="nav__logo"> Adventure </a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link">Home</a>
+              <a href="indexasdfas.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Activities</a>
@@ -33,7 +33,7 @@
               <a href="#" class="nav__link nav__about">About Us</a>
             </li>
             <li class="nav__item">
-              <a href="register.html" class="nav__link nav__register"
+              <a href="register.php" class="nav__link nav__register"
                 >Sign In</a
               >
             </li>
@@ -50,6 +50,7 @@
       </nav>
     </header>
     <div class="center">
+<!--      <img class="login-bg" src="assets/images/test1.webp">-->
       <div class="card" id="card">
         <form action="#" class="front">
           <h1>Sign in</h1>
@@ -60,12 +61,12 @@
           <h2 id="register">Register</h2>
         </form>
 
-        <form action="#" class="back">
+        <form action="/register" method="POST" class="back">
           <h1>Register</h1>
-          <div class="group"><i class="icon-user"></i><input class="name" type="text" placeholder="Name"></div>
-          <div class="group"><i class="icon-mail-alt"></i><input class="email" type="email" placeholder="Email"></div>
-          <div class="group"><i class="icon-lock"></i><input class="password" type="password" placeholder="Password"></div>
-          <div class="group"><i class="icon-lock"></i><input class="password" type="password" placeholder="Confirm password"></div>
+          <div class="group"><i class="icon-user"></i><input class="name" name="name" type="text" placeholder="Name"></div>
+          <div class="group"><i class="icon-mail-alt"></i><input class="email" name="email" type="email" placeholder="Email"></div>
+          <div class="group"><i class="icon-lock"></i><input class="password" name="password" type="password" placeholder="Password"></div>
+          <div class="group"><i class="icon-lock"></i><input class="password" name="confirm_password" type="password" placeholder="Confirm password"></div>
           <input type="submit" id="btnR" value="Register">
 
           <h2 id="Login">Login</h2>
