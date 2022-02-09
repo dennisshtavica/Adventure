@@ -80,7 +80,7 @@ const sr2 = ScrollReveal({
 sr2.reveal('.cards');
 sr2.reveal('.grid__cards');
 
-const sr3 = ScrollReveal({
+const sr3 = ScrollReveal({ 
   reset: true,
   origin: "left",
   distance: "60px",
@@ -99,6 +99,42 @@ const sr4 = ScrollReveal({
 });
 
 sr4.reveal(".condition2");
+
+// VALIDATE
+
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
+
+function checkInputs(){
+  const userValue = username.value.trim();
+  const passValue = password.value.trim();
+
+  if(userValue === ''){
+    setErrorFor(username)
+  }
+  else {
+      setSuccessFor(username);
+  }
+}
+
+function setError(input){
+  const formControl = input.parentElement;
+  formControl.className = 'form-control error';
+}
+
+
+function setSuccessFor(input){
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
+}
+
 
 
 

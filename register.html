@@ -51,10 +51,16 @@
     </header>
     <div class="center">
       <div class="card" id="card">
-        <form action="#" class="front">
+        <form action="#" class="front" id="form">
           <h1>Sign in</h1>
-          <div class="group"><i class="icon-mail-alt"></i><input class="email" type="email" placeholder="Email"></div>
-          <div class="group"><i class="icon-lock"></i><input class="password" type="password" placeholder="Password"></div>
+          <div class="group success"><i class="icon-mail-alt"></i><input class="email" type="email" id="username" placeholder="Email">
+            <i class="fas fa-check-circle move-circle"></i>
+            <i class="fas fa-exclamation-circle move-circle"></i>
+          </div>
+          <div class="group error"><i class="icon-lock"></i><input class="password" type="password" id="password" placeholder="Password">
+            <i class="fas fa-check-circle move-circle"></i>
+            <i class="fas fa-exclamation-circle move-circle"></i>
+          </div>
           <input type="submit" id="btn" value="Login">
 
           <h2 id="register">Register</h2>
