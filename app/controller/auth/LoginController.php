@@ -1,9 +1,10 @@
 <?php
 
-
 namespace App\Controller\Auth;
+require ("./database/Connection.php");
 
 use App\Controller\BaseController;
+use App\Database\Connection;
 use App\User;
 
 class LoginController extends BaseController
@@ -24,19 +25,24 @@ class LoginController extends BaseController
     public function login($request)
     {
         $this->validate($request,['email','password']);
-        $user = null; // Merre userin nga databaza permes email
+        // select a particular user by id
+        $connection = new Connection();
+        $cnn = $connection->open();
+        $stmt = $cnn->prepare("SELECT * FROM `user` WHERE email=?");
+        $stmt->bind_param('s', $request["email"]);
+        $stmt->execute();
+        $results = $stmt->get_result();
+        $user = null;
+        while ($res = $results->fetch_object()) {
+            $user = $res;
+        }
+        $connection->close();
+        var_dump($user);
         $success = false;
         if($user) {
             // if (passwordi qe e ka shkrujt useri a osht i njejt ne databaz)
-            if (password_verify($request["password"], $user->password)) {
+            if ($request["password"] == $user->password) {
                 $_SESSION["logged_in"] = true;
-                $userData = [
-                    "name" => "$user->first_name $user->last_name",
-                    "user_id" => $user->user_id,
-                    "role" => $user->role->title
-                ];
-                setcookie("auth", "1",time()+86000,"/");
-                setcookie("user", json_encode($userData),time()+86000,"/");
                 $success = true;
             }
         }
