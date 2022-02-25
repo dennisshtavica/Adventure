@@ -4,9 +4,13 @@
     <title>Sign In</title>
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/loginStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/loginStyle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <!-- Boxicons -->
     <link
       rel="stylesheet"
@@ -49,40 +53,84 @@
         </div>
       </nav>
     </header>
+
     <div class="center">
       <div class="card" id="card">
-        <form action="#" class="front" id="form">
+        <form action="#" class="front">
           <h1>Sign in</h1>
-          <div class="group success"><i class="icon-mail-alt"></i><input class="email" type="email" id="username" placeholder="Email">
-            <i class="fas fa-check-circle move-circle"></i>
-            <i class="fas fa-exclamation-circle move-circle"></i>
+
+          <div class="group">
+            <i class="icon-mail-alt"></i>
+            <input class="email1" type="email" placeholder="Email" />
           </div>
-          <div class="group error"><i class="icon-lock"></i><input class="password" type="password" id="password" placeholder="Password">
-            <i class="fas fa-check-circle move-circle"></i>
-            <i class="fas fa-exclamation-circle move-circle"></i>
+          <div class="group">
+            <i class="icon-lock"></i>
+            <input class="password1" type="password" placeholder="Password" />
           </div>
-          <input type="submit" id="btn" value="Login">
+
+          <input type="submit" value="Login" />
 
           <h2 id="register">Register</h2>
         </form>
 
-        <form action="#" class="back">
+        <form action="#" class="back" id="form">
           <h1>Register</h1>
-          <div class="group"><i class="icon-user"></i><input class="name" type="text" placeholder="Name"></div>
-          <div class="group"><i class="icon-mail-alt"></i><input class="email" type="email" placeholder="Email"></div>
-          <div class="group"><i class="icon-lock"></i><input class="password" type="password" placeholder="Password"></div>
-          <div class="group"><i class="icon-lock"></i><input class="password" type="password" placeholder="Confirm password"></div>
-          <input type="submit" id="btnR" value="Register">
+
+          <div class="group" id="user-form">
+            <i class="icon-user"></i>
+            <input
+              id="user"
+              type="text"
+              placeholder="Name"
+              oninput="userValidation()"
+            />
+            <i class="fas fa-check-circle move-circle"></i>
+            <i class="fas fa-exclamation-circle move-circle"></i>
+          </div>
+          <div class="group" id="email-form">
+            <i class="icon-mail-alt"></i>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              oninput="emailValidation()"
+            />
+            <i class="fas fa-check-circle move-circle"></i>
+            <i class="fas fa-exclamation-circle move-circle"></i>
+          </div>
+          <div class="group" id="pass-form">
+            <i class="icon-lock"></i>
+            <input
+              class="password2"
+              id="pass"
+              type="password"
+              placeholder="Password"
+              oninput="passwordValidation()"
+            />
+            <i class="fas fa-check-circle move-circle"></i>
+            <i class="fas fa-exclamation-circle move-circle"></i>
+          </div>
+          <div class="group" id="confirm-pass-form">
+            <i class="icon-lock"></i>
+            <input
+              class="password3"
+              id="confirm-pass"
+              type="password"
+              placeholder="Confirm password"
+              oninput="confirmPassValidation()"
+            />
+            <i class="fas fa-check-circle move-circle"></i>
+            <i class="fas fa-exclamation-circle move-circle"></i>
+          </div>
+
+          <!-- <button id="btn" type="submit">Register</button> -->
+          <input type="submit" id="btnR" value="Register" />
 
           <h2 id="Login">Login</h2>
         </form>
-
       </div>
     </div>
 
-
-    <script type="text/javascript" src="event.js"></script>
- </div>
     <script src="/JS/event.js"></script>
     <script src="/JS/main.js"></script>
   </body>
