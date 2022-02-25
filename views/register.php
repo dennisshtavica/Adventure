@@ -46,6 +46,7 @@
         </nav>
     </header>
     <div class="center">
+<<<<<<< HEAD
         <!--      <img class="login-bg" src="assets/images/test1.webp">-->
         <div class="card" id="card">
             <form action="#" class="front">
@@ -57,6 +58,15 @@
                     <input class="password" type="password" placeholder="Password" required>
                 </div>
                 <input type="submit" id="btn" value="Login">
+=======
+<!--      <img class="login-bg" src="assets/images/test1.webp">-->
+      <div class="card" id="card">
+        <form action="/login" method="POST" class="front">
+          <h1>Sign in</h1>
+          <div class="group"><i class="icon-mail-alt"></i><input class="email"  name="email" type="email" placeholder="Email"></div>
+          <div class="group"><i class="icon-lock"></i><input class="password" name="password" type="password" placeholder="Password"></div>
+          <input type="submit" id="btn" value="Login">
+>>>>>>> f3a49bd0c42fb45a80c23fbc3ac4ee44eda9f243
 
                 <h2 id="register">Register</h2>
             </form>
