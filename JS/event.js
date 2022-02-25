@@ -1,6 +1,6 @@
 document.getElementById('register').addEventListener('click', cardRotate);
 document.getElementById('Login').addEventListener('click', cardRotate2);
-document.getElementById('btnR').addEventListener('click', cardRotate2);
+// document.getElementById('btnR').addEventListener('click', cardRotate2);
 
 
 function cardRotate(){

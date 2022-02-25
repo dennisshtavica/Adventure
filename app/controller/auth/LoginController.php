@@ -28,6 +28,7 @@ class LoginController extends BaseController
         // select a particular user by id
         $connection = new Connection();
         $cnn = $connection->open();
+        // pse perdoren pikpyetjet
         $stmt = $cnn->prepare("SELECT * FROM `user` WHERE email=?");
         $stmt->bind_param('s', $request["email"]);
         $stmt->execute();
@@ -37,7 +38,7 @@ class LoginController extends BaseController
             $user = $res;
         }
         $connection->close();
-        var_dump($user);
+
         $success = false;
         if($user) {
             // if (passwordi qe e ka shkrujt useri a osht i njejt ne databaz)

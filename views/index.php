@@ -40,7 +40,7 @@
               <a href="AboutUs.html" class="nav__link nav__about">About Us</a>
             </li>
             <li class="nav__item">
-              <a href="register.html" class="nav__link nav__register"
+              <a href="/register" class="nav__link nav__register"
                 >Sign In</a
               >
             </li>
