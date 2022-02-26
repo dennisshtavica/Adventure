@@ -19,11 +19,11 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.php" class="nav__logo"> Adventure </a>
+            <a href="/" class="nav__logo"> Adventure </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.php" class="nav__link">Home</a>
+                        <a href="/" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Activities</a>

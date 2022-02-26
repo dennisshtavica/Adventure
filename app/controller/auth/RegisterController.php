@@ -27,7 +27,6 @@ class RegisterController extends BaseController
      */
     public function register($request)
     {
-        var_dump($request);
       $this->validate($request,['name','email','password','confirm_password']);
 
         $name = $_POST['name'];
