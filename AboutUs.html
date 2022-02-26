@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-
-    <link
-            rel="shortcut icon"
-            href="./assets/images/favicon-32x32.png"
-            type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./CSS/PortofolioStyle.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/AboutUs.css" />
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
+
 <!-- HEADER -->
 <header class="header" id="header">
     <nav class="nav container">
-        <a href="index.html" class="nav__logo"> Adventure </a>
+        <a href="/" class="nav__logo"> Adventure </a>
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="index.html" class="nav__link">Home</a>
+                    <a href="/" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="nav__link">Activities</a>
@@ -30,7 +26,7 @@
                     <a href="AboutUs.html" class="nav__link nav__about">About Us</a>
                 </li>
                 <li class="nav__item">
-                    <a href="register.html" class="nav__link nav__register"
+                    <a href="/register" class="nav__link nav__register"
                     >Sign In</a
                     >
                 </li>
@@ -42,29 +38,53 @@
         </div>
         <div class="nav__toggle" id="nav-toggle">
             <img src="/assets/images/burger-bar.png" alt="" />
-            <!-- <i class='bx bx-menu'></i> -->
         </div>
     </nav>
 </header>
 
-<main>
-        <div class="BledPortofolio">
-            <img class="bledorPic" src="./assets/images/bledorProfile.jpg">
-             <h1>HELLO</h1>
-            <h2>I'm Bledor</h2>
-            <p>I'm a Web/Mobile Developer</p>
+<div class="header2">
+    <h1>About Us</h1>
+</div>
+
+<div class="mainCards">
+    <div class="portofolioCard">
+        <div class="bledorPic">
+            <img src="/assets/images/bledorProfile.jpg" alt="" />
         </div>
+        <div class="content">
+            <h3>Hello</h3>
+            <p>
+                I’m Bledor <br />
+                I'm a Web/Mobile Developer
+            </p>
+            <div class="socials1">
+                <a href=""> <img src="/assets/images/facebook1.png" alt="" /></a>
+                <a href=""> <img src="/assets/images/twitter1.png" alt=""></a>
+                <a href=""><img src="/assets/images/linkedin1.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 
-<!--        <div class="DenisPortofolio">-->
-<!--            <img class="denisPic" src="./assets/images/denisProfile.jpg">-->
-<!--            <h1>HELLO</h1>-->
-<!--            <h2>I'm Denis</h2>-->
-<!--            <p>I'm a Front/Backend Developer</p>-->
-<!--        </div>-->
+    <div class="denisPortofolioCard">
+        <div class="denisPic">
+            <img src="/assets/images/denisProfile.jpg" alt="" />
+        </div>
+        <div class="content">
+            <h3>Hello</h3>
+            <p>
+                I’m Denis <br />
+                I'm a Front End <br>
+                Web Developer
+            </p>
+            <div class="socials1">
+                <a href=""> <img src="/assets/images/facebook1.png" alt="" /></a>
+                <a href=""> <img src="/assets/images/twitter1.png" alt=""></a>
+                <a href=""><img src="/assets/images/linkedin1.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 
-</main>
-<!-- Scroll Reveal -->
-<script src="/JS/scrollreveal.min.js"></script>
-<script src="/JS/main.js"></script>
+</div>
+
 </body>
 </html>
